@@ -35,5 +35,12 @@ auto main(int argc, char* argv[])-> int{
                 cout << argv[i-1] << " ";
             }
         }
+        else {
+            for(int i=1;i<argc;i++){
+                cout << argv[i] << " ";
+            }
+            cout << "\n";
+        }
+        
 return 0;
 }
