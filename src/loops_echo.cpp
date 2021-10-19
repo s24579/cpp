@@ -44,4 +44,8 @@ auto main(int argc, char* argv[])-> int{
         
 return 0;
 }
+<<<<<<< HEAD
 /* Wypisuje argumenty w odpowiedni sposob w zaleznosci od podanych argumentow */
+=======
+/* Wypisuje argumenty w odpowiedni sposob w zaleznosci od podanych argumentow */
+>>>>>>> b7f6fbaba7d09e6c6d322bdc179aacab0a210e57
