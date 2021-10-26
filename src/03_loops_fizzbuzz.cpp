@@ -1,9 +1,10 @@
 #include <iostream>
 
-int main() {
-    int x;
-    std::cout << "Type number: ";
-    std::cin >> x;
+auto main(int argc, char* argv[])-> int{
+    if (argc == 1) {
+        return 1;
+    }
+    int x=std::stoi(argv[1]);
     for (int a=1;a<=x;a++) {
         std::cout << a << " ";
         if(a%3==0){
