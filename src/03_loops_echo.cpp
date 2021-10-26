@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 auto main(int argc, char* argv[])-> int{
-    if (argc == 0) {
+    if (argc < 2) {
         return 1;
     }
     std::string arg1 = std::string{argv[1]};
