@@ -8,10 +8,9 @@ int main()
         
 	if (a<b)
 		if (c!=0)	
-		for(int x;a<b;a++){
-			x=a/c;
+		for(;a<b;a++){
 			if (a%c==0)
-			std::cout << x << "\n";	
+			std::cout << a << "\n";	
 		}
 		else {
    		std::cout << "c musi być różne od 0\n";
