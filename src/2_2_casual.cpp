@@ -8,7 +8,7 @@ int main()
         
 	if (a<b)
 		if (c!=0)	
-		for(;a<b;a++){
+		for(;a<=b;a++){
 			if (a%c==0)
 			std::cout << a << "\n";	
 		}

@@ -7,7 +7,7 @@ int main()
 	std::cin >> a >> b;
         
 	if (a<b)	
-	for(;a<b;a++){
+	for(;a<=b;a++){
 		std::cout << a << "\n";	
 	}
 	else {
