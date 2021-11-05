@@ -6,12 +6,12 @@ int main()
     std::cout << "Podaj x\n";
     std::cin >> x;
     if(x>0)
-        std::cout << "1";
+        std::cout << "1\n";
     else {
         if (x==0)
-            std::cout << "0";
+            std::cout << "0\n";
         else {
-            std::cout << "-1";
+            std::cout << "-1\n";
         }
     }
     return 0;

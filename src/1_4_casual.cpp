@@ -6,9 +6,9 @@ int main()
     std::cout << "Podaj x i y\n";
     std::cin >> x >> y ;
     if(x>y)
-        std::cout << x;
+        std::cout << x << "\n";
     else{
-        std::cout << y;
+        std::cout << y << "\n";
     }
     return 0;
 }

@@ -6,12 +6,12 @@ int main()
     std::cout << "Podaj x, y i z\n";
     std::cin >> x >> y >> z;
     if(x>y&&x>z)
-        std::cout << x;
+        std::cout << x << "\n";
     else {
         if (y>x&&y>z)
-            std::cout << y;
+            std::cout << y << "\n";
         else {
-            std::cout << z;
+            std::cout << z << "\n";
         }
     }
     return 0;

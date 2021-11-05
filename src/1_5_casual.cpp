@@ -6,9 +6,9 @@ int main()
     std::cout << "Podaj x\n";
     std::cin >> x;
     if(x>=0)
-        std::cout << x;
+        std::cout << x << "\n";
     else{
-        std::cout << x*-1;
+        std::cout << x*-1 << "\n";
     }
     return 0;
 }
