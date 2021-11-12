@@ -13,3 +13,4 @@ e {
     std::cout << z << "\n";
     return 0;
 }
+/* Wypisuje liczby podzielne przez y w zakresie 0-x */

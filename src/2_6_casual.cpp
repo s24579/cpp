@@ -1,24 +1,24 @@
 #include <iostream>
 
-int main()
+auto main( int argc, char* argv[]) -> int
 {
-    int x,y,z;
-    std::cout << "Podaj liczbe do porownania i ile liczb chcesz porownac\n";
-    std::cin >> x >> z;
-    for(;z>0;z--){
-        std::cout << "podaj y: ";
-        std::cin >> y;
-        if(x>y)
+    int x=std::stoi(argv[1]);
+
+    for(int i=2; i<argc; i++)
+    {
+        int y=std::stoi(argv[i]);
+        if (x>y)
         {
-        std::cout << x << " > " << y << "\n"; 
+            std::cout << x << ">" << y << std::endl;
         }
-        else {
-        if (x == y)
-            std::cout << x << " = " << y << "\n";
-        else {
-            std::cout << x << " < " << y << "\n";
+        else if (x==y)
+        {
+            std::cout << x << "=" << y << std::endl;
         }
-    }
+        else
+        {
+            std::cout << x << ">" << y << std::endl;
+        }
     }
     return 0;
 }

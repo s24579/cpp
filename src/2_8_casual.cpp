@@ -13,3 +13,4 @@ e{
     std::cout<< y << "\n";
     return 0;
 }
+/* Silnia */
