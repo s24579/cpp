@@ -1,17 +1,18 @@
 #include <iostream>
 #include <string>
 
-auto init(int a[], int n)-> void
+auto asum(int a[], int n, int liczby)-> void
 {
     for(int i=0;i<n;i++)
     {
-        a[i]=0;
+        a[i]=liczby;
     }
 return;
 }
 auto main(int argc , char* argv[]) -> int
 {
     int n=std::stoi(argv[1]);
+    int liczby=std::stoi(argv[1]);
     if(argc==0)
     {
         return 1;
@@ -19,13 +20,13 @@ auto main(int argc , char* argv[]) -> int
     else
     {   
         int a[999];
-        init(a,n);
-        for(int i=0;i<n;i++)
+        asum(a,n,liczby);
+        for(int i=0,x;i<n;i++)
         {
-            std::cout << a[i] << " ";
+
         }
         std::cout << "\n";
     }
     return 0;
 }
-/* Wypisuje tablice */
+/* NIE SKONCZONE */
