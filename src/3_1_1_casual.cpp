@@ -3,8 +3,9 @@
 
 auto init(int a[], int n)-> void
 {
-    for(;n>0;n--){
-        a[n]=0;
+    for(int i=0;i<n;i++)
+    {
+        a[i]=0;
     }
 return;
 }
@@ -16,8 +17,14 @@ auto main(int argc , char* argv[]) -> int
         return 1;
     }
     else
-    {
-        std::cout << n << std::endl;
+    {   
+        int a[999];
+        init(a,n);
+        for(int i=0;i<n;i++)
+        {
+            std::cout << a[i] << " ";
+        }
+        std::cout << "\n";
     }
     return 0;
 }
