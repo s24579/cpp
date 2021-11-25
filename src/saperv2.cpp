@@ -1,12 +1,18 @@
 #include <iostream>
 #include <random>
+#include <stdio.h>
+
 int mapa[30][30]={};
 int kolumna;
 int wiersz;  
-int essa;
     //wypisuje pola w terminalu
     auto wypisanie_mapy() -> void
-    {
+    {   
+        for(int i=0;i<30;i++)
+        {
+            std::cout << i << " ";
+        }
+        std::cout << std::endl << std::endl;
         for(int i=0;i<30;i++)
         {
             for(int j=0;j<30;j++)
