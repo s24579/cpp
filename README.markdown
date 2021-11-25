@@ -1,1 +1,1 @@
-Zadanka na pgr
+Zadanka na pgr w src
