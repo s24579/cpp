@@ -1,32 +1,22 @@
 #include <iostream>
-#include <string>
+#include <array>
 
-auto asum(int a[], int n, int liczby)-> void
+auto asum(int a[], int n) -> int
 {
-    for(int i=0;i<n;i++)
-    {
-        a[i]=liczby;
-    }
-return;
+	int suma = 0;
+	for (int i=0;i<n;i++) suma = suma + a[i];
+	return suma;
 }
-auto main(int argc , char* argv[]) -> int
-{
-    int n=std::stoi(argv[1]);
-    int liczby=std::stoi(argv[1]);
-    if(argc==0)
-    {
-        return 1;
-    }
-    else
-    {   
-        int a[999];
-        asum(a,n,liczby);
-        for(int i=0,x;i<n;i++)
-        {
 
-        }
-        std::cout << "\n";
-    }
-    return 0;
+
+		
+
+auto main() -> int
+{
+	int n=10;
+	int a[10]={42, 9, -1, 18, 59, 3, 101, 31, 72, 12};
+	int wynik = asum(a,n);
+	std::cout << "wynik =  "<< wynik <<"\n";
+
+	return 0;
 }
-/* NIE SKONCZONE */
