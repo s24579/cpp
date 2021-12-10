@@ -52,7 +52,33 @@ void zadanie3()
     }
 }
 
+void zadanie4()
+{
+    std::string imie1,imie2,imie3,imie4,imie5;
+    int imiem=0,imiek=0;
+    std::cout << "podaj 5 imion oddzielonych spacja\n";
+    std::cin >> imie1 >> imie2 >> imie3 >> imie4 >> imie5;
+    std::string tab[5]={imie1,imie2,imie3,imie4,imie5};
+    
+    for(int i=0;i<5;i++)
+    {
+        if(tab[i].back()=='a')
+        {
+            imiek++;
+        }
+        else
+        {
+            imiem++;
+        }
+    }
+    
+    std::cout << "Zenskich imion jest: " << imiek << std::endl << "Meskich imion jest: " << imiem << std::endl;
 
+}
+void zadanie5()
+{
+    
+}
 int main()
 {
     std::cout << "Zadanie 1" << std::endl;
@@ -61,6 +87,7 @@ int main()
     zadanie2();
     std::cout << "Zadanie 3" << std::endl;
     zadanie3();
-
+    std::cout << "Zadanie 4" << std::endl;
+    zadanie4();
     return 0;
 }
