@@ -75,7 +75,6 @@ auto zadanie4() -> void
     std::cout << "Zenskich imion jest: " << imiek << std::endl << "Meskich imion jest: " << imiem << std::endl;
 
 }
-
 auto main() -> int
 {
     std::cout << "Zadanie 1" << std::endl;
