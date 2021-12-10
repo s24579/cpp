@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-void zadanie1()
+auto zadanie1() -> void
 {
     for(int i=1;i<3;i++)
     {
@@ -25,7 +25,7 @@ void zadanie1()
     }
 }
 
-void zadanie2()
+auto zadanie2() -> void
 {
     std::string imie="Jakub";
     double waga=80.5;
@@ -33,7 +33,7 @@ void zadanie2()
     std::cout << "Imie: " << imie << std::endl << std::endl << "Waga: " << waga << " kg\n\n" << "Wzrost: " << wzrost << " cm" << std::endl; 
 }
 
-void zadanie3()
+auto zadanie3() -> void
 {
     std::string imie1,imie2;
     std::cout << "podaj imie1 i po spacji imie2\n";
@@ -52,7 +52,7 @@ void zadanie3()
     }
 }
 
-void zadanie4()
+auto zadanie4() -> void
 {
     std::string imie1,imie2,imie3,imie4,imie5;
     int imiem=0,imiek=0;
@@ -75,9 +75,9 @@ void zadanie4()
     std::cout << "Zenskich imion jest: " << imiek << std::endl << "Meskich imion jest: " << imiem << std::endl;
 
 }
-void zadanie5()
+auto zadanie15() -> void
 {
-    
+
 }
 int main()
 {
