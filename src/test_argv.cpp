@@ -5,6 +5,7 @@ auto main(int argc, char* argv[])-> int{
     if (argc == 1) {
         return 1;
     }
-    std::cout << argv[1] << std::endl;
+    std::cout << argv[1] << std::endl << argv[0];
+    
 return 0;
 }
