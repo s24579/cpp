@@ -13,6 +13,6 @@ auto main() -> int
 	int n = 10;
 	int a[10] = {42, 9, -1, 18, 59, 3, 101, 31, 72, 12};
 	int min = amin(a,n);
-	std::cout <<"Najmniejsza liczby wynosi: " << min << std::endl;
+	std::cout <<"Najmniejsza liczby wynosi: " << min << "\n";
 	return 0;
 }
