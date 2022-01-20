@@ -1,17 +1,38 @@
 #include <iostream>
 #include <random>
+#include <stdio.h>
+
 int mapa[30][30]={};
-int kolumna;
-int wiersz;  
-int essa;
+int kolumna,wiersz; 
     //wypisuje pola w terminalu
     auto wypisanie_mapy() -> void
-    {
+    {   
+        std::cout << "   ";
         for(int i=0;i<30;i++)
-        {
+        {   
+            if(i<10)
+            {
+            std::cout << "\033[1;31m" << i <<"\033[0m" << "  ";
+            }
+            else
+            {
+            std::cout << "\033[1;31m" << i <<"\033[0m" << " "; 
+            }
+        }
+        std::cout << std::endl;
+        for(int i=0;i<30;i++)
+        {   
+            if(i<10)
+            {
+                std::cout << "\033[1;31m" << i <<"\033[0m" << "  ";
+            }
+            else
+            {
+            std::cout << "\033[1;31m" << i <<"\033[0m" " ";
+            }
             for(int j=0;j<30;j++)
             {
-             std::cout << mapa[i][j] << " ";
+             std::cout << mapa[i][j] << "  ";
             }
             std::cout << std::endl;
         }
@@ -207,7 +228,7 @@ int essa;
             {
             mapa[29][1]+=1;
             }
-        }
+        }       
     }
     //losuje pozycje bomb
     auto bomby() -> void
@@ -219,7 +240,7 @@ int essa;
         for(int x=0;x<50;)
         {   
             if(mapa[kolumna][wiersz]==0)
-            {
+            {   
                 mapa[kolumna][wiersz]=9;
                 x++;
             }
@@ -230,11 +251,33 @@ int essa;
             }
         }
     }
-    
+    //przeprowadza gre
+    auto gra() -> void
+    {   
+        int x,y;
+        char action;
+        int licznik_bomb=0;
+        for(int x=0;x<30;x++)
+        {
+            for(int y=0;y<30;y++)
+            {
+                if(mapa[x][y]==9)
+                {
+                    licznik_bomb+=1;
+                }
+            }
+        }
+        std::cout << std::endl << "pozostale miny: " << licznik_bomb;
+        std::cout << std::endl << "P - odsloniecie pola" << std::endl << "Z - oznaczenie miny" << std::endl << "F - zdjecie oznaczenia miny";
+        std::cout << std::endl << "Wypisz nr wiersza, nr kolumny i akcje" << std::endl;
+        std::cin >> x >> y >> action;
+        
+    }
 auto main() ->int 
 {
     bomby();
     dodanie_cyfr();
     wypisanie_mapy();
+    gra();
     return 0;
 }
