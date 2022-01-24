@@ -257,27 +257,31 @@ int kolumna,wiersz;
         int x,y;
         char action;
         int licznik_bomb=0;
-        for(int x=0;x<30;x++)
-        {
-            for(int y=0;y<30;y++)
+        do
+        {   
+            wypisanie_mapy();
+            for(int x=0;x<30;x++)
             {
-                if(mapa[x][y]==9)
+                for(int y=0;y<30;y++)
                 {
-                    licznik_bomb+=1;
+                    if(mapa[x][y]==9)
+                    {
+                        licznik_bomb+=1;
+                    }
                 }
             }
+            std::cout << std::endl << "pozostale miny: " << licznik_bomb;
+            std::cout << std::endl << "P - odsloniecie pola" << std::endl << "Z - oznaczenie miny" << std::endl << "F - zdjecie oznaczenia miny";
+            std::cout << std::endl << "Wypisz nr wiersza, nr kolumny i akcje" << std::endl;
+            std::cin >> x >> y >> action;
         }
-        std::cout << std::endl << "pozostale miny: " << licznik_bomb;
-        std::cout << std::endl << "P - odsloniecie pola" << std::endl << "Z - oznaczenie miny" << std::endl << "F - zdjecie oznaczenia miny";
-        std::cout << std::endl << "Wypisz nr wiersza, nr kolumny i akcje" << std::endl;
-        std::cin >> x >> y >> action;
+        while (licznik_bomb>0);
         
     }
 auto main() ->int 
 {
     bomby();
     dodanie_cyfr();
-    wypisanie_mapy();
     gra();
     return 0;
 }
